@@ -509,7 +509,7 @@ end
   })
 
 TabB:AddButton({
-	Name = "Button!",
+	Name = "Teleport To Supplies Shop",
 	Callback = function()
       				local args = {
     [1] = "SuppliesStoreInterior",
@@ -518,3 +518,37 @@ TabB:AddButton({
 game:GetService("ReplicatedStorage").CloudFrameShared.DataStreams.EnterDoor:InvokeServer(unpack(args))
   	end    
 })
+
+TabB:AddButton({
+	Name = "Teleport To Tavern",
+	Callback = function()
+      			local args = {
+    [1] = "TavernInterior",
+    [2] = "Inside"
+}
+game:GetService("ReplicatedStorage").CloudFrameShared.DataStreams.EnterDoor:InvokeServer(unpack(args))
+  	end    
+})
+
+TabB:AddButton({
+	Name = "Teleport To Pets Store",
+	Callback = function()
+      		local args = {
+    [1] = "PetShop",
+    [2] = "MainEntrance"
+}
+game:GetService("ReplicatedStorage").CloudFrameShared.DataStreams.EnterDoor:InvokeServer(unpack(args))
+  	end    
+})
+
+TabB:AddButton({
+	Name = "Teleport To Tavern",
+	Callback = function()
+      			local args = {
+    [1] = "TavernInterior",
+    [2] = "Inside"
+}
+game:GetService("ReplicatedStorage").CloudFrameShared.DataStreams.EnterDoor:InvokeServer(unpack(args))
+  	end    
+})
+
